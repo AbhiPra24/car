@@ -39,15 +39,7 @@
 				<configuration>
 					<servicesXmlFile>src/main/resources/services/SimpleService/META-INF/services.xml</servicesXmlFile>
 				</configuration>
-				<executions>
-					<execution>
-						<id>generates aar</id>
-						<phase>package</phase>
-						<goals>
-							<goal>aar</goal>
-						</goals>
-					</execution>
-				</executions>
+				
 			</plugin>
 		</plugins>
 	</build>

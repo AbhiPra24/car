@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.605 s - in TestSuite
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.274 s <<< FAILURE! - in TestSuite
+justdial.car.initiate  Time elapsed: 6.048 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'ABHINAV', ip: '192.168.0.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\abhin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55560}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a16dd1f1c039f0d3e09c831ac9aa1e7
+	at justdial.car.initiate(car.java:79)
+
