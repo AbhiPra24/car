@@ -41,7 +41,8 @@ public class CarServiceInfoPage {
 		
 		Object[][] output = new Object[10][3];
 		int outputrow = 0; 
-		
+		driver.navigate().refresh();
+
 		// In this try Block , Name ,Address, Phone number of the car wash services are stored in the excel file if their votes are >20 and rating is >4.0
 		try {
 			List<WebElement> elements = driver.findElements(By.className("store-details"));

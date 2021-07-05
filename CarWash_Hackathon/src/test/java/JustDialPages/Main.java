@@ -116,6 +116,8 @@ public class Main {
 			wait.pollingEvery(Duration.ofSeconds(5));
 			WebElement cross = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"best_deal_div\"]/section/span")));
 			actions.moveToElement(cross).click().perform();
+			driver.navigate().refresh();
+
 			
 			// Function for performing Screenshot
 			ScreenShot screenShotPage = new ScreenShot();
