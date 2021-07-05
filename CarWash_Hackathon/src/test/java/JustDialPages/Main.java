@@ -112,11 +112,10 @@ public class Main {
 			driver.findElement(By.id("srchbx")).sendKeys(getInputValue, Keys.ENTER);
 			
 			// Explicit Wait to avoid "ElementNotTracable" Error
-			WebDriverWait wait = new WebDriverWait(driver,10);
+			/*WebDriverWait wait = new WebDriverWait(driver,10);
 			wait.pollingEvery(Duration.ofSeconds(5));
 			WebElement cross = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"best_deal_div\"]/section/span")));
-			actions.moveToElement(cross).click().perform();
-			driver.navigate().refresh();
+			actions.moveToElement(cross).click().perform();*/
 
 			
 			// Function for performing Screenshot
